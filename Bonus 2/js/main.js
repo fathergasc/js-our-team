@@ -47,6 +47,10 @@ for (let key in ourTeam) {
 for (let i = 0; i < ourTeam.length; i++) {
     const teamMember = ourTeam[i];
     console.log('teamMember: ', teamMember);
-    containerDom.innerHTML += `Nome: ${teamMember.name}. Posizione: ${teamMember.position}. Foto: <img src="img/${teamMember.image}" alt="">. `;
+    containerDom.innerHTML +=  `<div class="card">
+                                    <img src="img/${teamMember.image}" alt="${teamMember.name}">
+                                    <span class="name py-5">${teamMember.name}</span>
+                                    <span class="position py-5">${teamMember.position}</span>
+                                </div>`;
 }
 
